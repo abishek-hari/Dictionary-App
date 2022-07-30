@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  border: none;
+  outline: none;
+  text-transform: capitalize;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #a96ef0;
+  padding: 0 2rem;
+}
+.wrapper {
+  width: 420px;
+  max-width: 32em;
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 2rem 1rem;
+}
+.wrapper .header {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+.wrapper .search {
+  position: relative;
+  margin: 1rem 0.5rem;
+  display: grid;
+  grid-template-columns: 9fr 3fr;
+  gap: 1em;
+}
+.search input {
+  height: 50px;
+  width: 100%;
+  border-radius: 0.2rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+  border-bottom: 2px solid #a96ef0;
+}
+.search button {
+  background-color: #a96ef0;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+  border-radius: 0.3em;
+}
+.wrapper .info-text {
+  color: #9a9a9a;
+  font-size: 15px;
+  text-align: center;
+  margin: 0.5rem;
+}
+.info-text span {
+  font-weight: 500;
+}
+.wrapper ul li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.8rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+ul li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+ul .word p {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+ul .word span {
+  font-size: 1rem;
+  color: #989898;
+}
+ul .word i {
+  cursor: pointer;
+  font-size: 1rem;
+  color: #999;
+}
+.content li .details {
+  padding-left: 10px;
+  border-radius: 0.3rem;
+  border-left: 3px solid #4d59fb;
+}
+.content li .details p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.4rem;
+}
+.content li .details span {
+  font-size: 1rem;
+  color: #7e7e7e;
+}
+.synonyms .details .list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.synonyms .details .list span {
+  margin-right: 5px;
+  text-decoration: underline;
+}
+
+@media (max-width: 560px) {
+  .wrapper .search {
+    display: grid;
+    grid-template-columns: 12fr;
+  }
+  .search button {
+    padding: 1rem 0;
+  }
+}
